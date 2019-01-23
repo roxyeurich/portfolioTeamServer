@@ -7,14 +7,14 @@ try {
 }
 
 
-$name =$_POST["name"];
-$lastname =$_POST["lastname"];
-$pass =$_POST["pass"];
-$email =$_POST["email"];
-$username =$_POST["username"];
-$age =$_POST["age"];
-$location =$_POST["location"];
-$admin =$_POST["admin"];
+//$name =$_POST["name"];
+//$lastname =$_POST["lastname"];
+//$pass =$_POST["pass"];
+//$email =$_POST["email"];
+//$username =$_POST["username"];
+//$age =$_POST["age"];
+//$location =$_POST["location"];
+//$admin =$_POST["admin"];
 
 
 //$query = "SELECT * FROM users WHERE email='$email'";
@@ -24,10 +24,10 @@ $admin =$_POST["admin"];
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
 $query = "INSERT INTO users (name, lastname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
 
-// $result = $conn->query($query);
-// if($result){
+//$result = $conn->query($query);
+//if($result){
 //  $users=$result->fetchAll();
- 
+//  
 //  if (!empty($users)){
 //    echo json_encode(false);  
 //  } else {
