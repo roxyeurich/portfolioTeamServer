@@ -24,7 +24,7 @@ try {
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
 $query = "INSERT INTO users (name, lastname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
 
-//$result = $conn->query($query);
+$result = $conn->query($query);
 //if($result){
 //  $users=$result->fetchAll();
 //  
