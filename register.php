@@ -28,8 +28,8 @@ $result = $conn->query($query);
 if($result){
   $users=$result->fetchAll();
   
-  if (!empty($users)){
-    echo json_encode(false);  
+//  if (!empty($users)){
+//    echo json_encode(false);  
 //  } else {
 //   
 ////USE THIS TO GET REAL DATA FROM ID's    
