@@ -25,11 +25,11 @@ try {
 $query = "INSERT INTO users (name, lastname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
 
 $result = $conn->query($query);
-//if($result){
-//  $users=$result->fetchAll();
-//  
-//  if (!empty($users)){
-//    echo json_encode(false);  
+if($result){
+  $users=$result->fetchAll();
+  
+  if (!empty($users)){
+    echo json_encode(false);  
 //  } else {
 //   
 ////USE THIS TO GET REAL DATA FROM ID's    
@@ -53,9 +53,9 @@ $result = $conn->query($query);
 //  }
 //  
 //  
-//} else {
-//  echo json_encode(false);
-//}
+} else {
+  echo json_encode(false);
+}
 
 
 ?>
