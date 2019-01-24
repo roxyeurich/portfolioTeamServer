@@ -7,14 +7,14 @@ try {
 }
 
 
-//$name =$_POST["name"];
-//$lastname =$_POST["lastname"];
-//$pass =$_POST["pass"];
-//$email =$_POST["email"];
-//$username =$_POST["username"];
-//$age =$_POST["age"];
-//$location =$_POST["location"];
-//$admin =$_POST["admin"];
+$name =$_POST["name"];
+$lastname =$_POST["lastname"];
+$pass =$_POST["pass"];
+$email =$_POST["email"];
+$username =$_POST["username"];
+$age =$_POST["age"];
+$location =$_POST["location"];
+$admin =$_POST["admin"];
 
 
 //$query = "SELECT * FROM users WHERE email='$email'";
