@@ -24,10 +24,17 @@ try {
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
 $query = "INSERT INTO users (name, lastname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
 
-$result = $conn->query($query);
-if($result){
-  $users=$result->fetchAll();
-  
+
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully";
+
+//$result = $conn->query($query);
+//if($result){
+//  $users=$result->fetchAll();
+//  exho $result;
 //  if (!empty($users)){
 //    echo json_encode(false);  
 //  } else {
@@ -53,9 +60,9 @@ if($result){
 //  }
 //  
 //  
-} else {
-  echo json_encode(false);
-}
+//} else {
+//  echo json_encode(false);
+//}
 
 
 ?>
