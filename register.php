@@ -1,20 +1,20 @@
 <?php
 header('Access-Control-Allow-Origin: *'); 
 try {
-  $conn = new PDO("mysql:host=eedo4plet5mhv93s3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=a06uev86awzcjt3y","ofzywzaw9umo2n3o","nubyug4j44dg6i6z");
+  $conn = new PDO("mysql:host=edo4plet5mhv93s3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=a06uev86awzcjt3y","ofzywzaw9umo2n3o","nubyug4j44dg6i6z");
 } catch (PDOException $e){
   echo "Error".$e->getMessage();
 }
 
 
-$name =$_POST["name"];
-$lastname =$_POST["lastname"];
-$pass =$_POST["pass"];
-$email =$_POST["email"];
-$username =$_POST["username"];
-$age =$_POST["age"];
-$location =$_POST["location"];
-$admin =$_POST["admin"];
+//$name =$_POST["name"];
+//$lastname =$_POST["lastname"];
+//$pass =$_POST["pass"];
+//$email =$_POST["email"];
+//$username =$_POST["username"];
+//$age =$_POST["age"];
+//$location =$_POST["location"];
+//$admin =$_POST["admin"];
 
 
 //$query = "SELECT * FROM users WHERE email='$email'";
@@ -25,12 +25,13 @@ $admin =$_POST["admin"];
 $query = "INSERT INTO users (name, lastname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
 
 
+if ($conn->query($query) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $query . "<br>" . $conn->error;
+}
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
-
+$conn->close();
 //$result = $conn->query($query);
 //if($result){
 //  $users=$result->fetchAll();
