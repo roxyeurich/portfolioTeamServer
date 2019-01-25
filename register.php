@@ -6,7 +6,11 @@ try {
   echo "Error".$e->getMessage();
 }
 
-
+if( $_REQUEST["name"] || $_REQUEST["age"] ) {
+      echo "Welcome ". $_REQUEST['name']. "<br />";
+      echo "You are ". $_REQUEST['age']. " years old.";
+      exit();
+   }
 //$name =$_POST["name"];
 //$lastname =$_POST["lastname"];
 //$pass =$_POST["pass"];
