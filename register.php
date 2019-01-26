@@ -14,7 +14,7 @@ try {
 
 $fname =$_POST["fname"];
 $lname =$_POST["lname"];
-$pass =$_POST["pass"];
+$password =$_POST["password"];
 $email =$_POST["email"];
 $username =$_POST["username"];
 $age =$_POST["age"];
@@ -22,11 +22,7 @@ $location =$_POST["location"];
 
 
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
-$query = "INSERT INTO users (fname, lname, password, email, username, age, location, admin) VALUES ('$fname', '$lname', '$pass', '$email', '$username','$age', '$location', 1)";
-
-
-
-//$query = "INSERT INTO users (fname, lname, pass, email, username, age, location, admin) VALUES ('test', 'test', 'test', 'test', 'test','test', 'test', 1)";
+$query = "INSERT INTO users (fname, lname, password, email, username, age, location, admin) VALUES ('$fname', '$lname', '$password', '$email', '$username','$age', '$location', 1)";
 
 
 $result = $conn->query($query);
