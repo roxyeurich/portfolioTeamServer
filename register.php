@@ -19,7 +19,6 @@ $email =$_POST["email"];
 $username =$_POST["username"];
 $age =$_POST["age"];
 $location =$_POST["location"];
-$admin =$_POST["admin"];
 
 
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
