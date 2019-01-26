@@ -22,7 +22,7 @@ $location =$_POST["location"];
 
 
 //USE THIS TO TEST IF INFO IS GOING INTO DATABASE:
-$query = "INSERT INTO users (fname, lname, pass, email, username, age, location, admin) VALUES ('$fname', '$lname', '$pass', '$email', '$username','$age', '$location', 1)";
+$query = "INSERT INTO users (fname, lname, password, email, username, age, location, admin) VALUES ('$fname', '$lname', '$pass', '$email', '$username','$age', '$location', 1)";
 
 
 
