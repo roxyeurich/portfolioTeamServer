@@ -12,17 +12,17 @@ try {
   echo "Error".$e->getMessage();
 }
 
-$fname =$_POST["fname"];
-$lname =$_POST["lname"];
-$password =$_POST["password"];
-$email =$_POST["email"];
-$username =$_POST["username"];
-$age =$_POST["age"];
-$location =$_POST["location"];
+$user_id =$_POST["user_id"];
+$category =$_POST["category"];
+$title =$_POST["title"];
+$description =$_POST["description"];
+$software =$_POST["software"];
+$images =$_POST["images"];
+$logo =$_POST["logo"];
 
 
 //THIS INFO IS GOING INTO DATABASE:
-$query = "INSERT INTO users (fname, lname, password, email, username, age, location, admin) VALUES ('$fname', '$lname', '$password', '$email', '$username','$age', '$location', 1)";
+$query = "INSERT INTO portfolios (user_id, category, title, description, software, images, logo) VALUES ('$id', '$category', '$title', '$description', '$software', '$images', '$logo')";
 
 
 $result = $conn->query($query);
