@@ -21,7 +21,12 @@ $query = "SELECT * FROM users WHERE username='$username' AND password = '$passwo
 
 $result = $conn->query($query);
 if($result){
- echo json_encode(true); 
+  $users=$result->fetchAll();
+  echo json_encode($users);
+  
+} else {
+  echo json_encode(false);
 }
+
 
 ?>
