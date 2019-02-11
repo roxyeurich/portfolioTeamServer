@@ -18,16 +18,15 @@ $title =$_POST["title"];
 $description =$_POST["description"];
 $software =$_POST["software"];
 $images =$_POST["images"];
-$logo =$_POST["logo"];
 
 
 //THIS INFO IS GOING INTO DATABASE:
-$query = "INSERT INTO portfolios (user_id, category, title, description, software, images, logo) VALUES ('$id', '$category', '$title', '$description', '$software', '$images', '$logo')";
+$query = "INSERT INTO portfolios (user_id, category, title, description, software, images) VALUES ('1', '$category', '$title', '$description', '$software', '$images')";  
 
 
 $result = $conn->query($query);
 if($result){
- echo json_encode(true); 
+ echo json_encode(true);
 }
 
 
