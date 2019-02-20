@@ -26,7 +26,7 @@ if($result){
   if (count($users) === 0){
     echo json_encode(false);
   } else {
-    echo json_encode(true);
+    echo json_encode($users);
   }
 }
 
