@@ -21,7 +21,7 @@ $images =$_POST["images"];
 
 
 //THIS INFO IS GOING INTO DATABASE:
-$query = "INSERT INTO portfolios (user_id, category, title, description, software, images) VALUES ('1', '$category', '$title', '$description', '$software', '$images')";  
+$query = "INSERT INTO portfolios (user_id, category, title, description, software, images) VALUES ('$user_id', '$category', '$title', '$description', '$software', '$images')";  
 
 
 $result = $conn->query($query);
