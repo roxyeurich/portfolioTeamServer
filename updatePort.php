@@ -22,7 +22,7 @@ $software =$_POST["software"];
 
 
 //THIS INFO IS GOING INTO DATABASE:
-$query = "UPDATE portfolios SET user_id=$user_id, category=$category, software=$software, title=$title, description=$description, WHERE pf_id=$pf_id";  
+$query = "UPDATE portfolios SET user_id=$user_id, title=$title, description=$description, category=$category, software=$software, WHERE pf_id=$pf_id";  
 
 
 $result = $conn->query($query);
